@@ -531,7 +531,11 @@ input {
     color: var(--skin-color);
 }
 /*===== Skills Section =====*/
-
+.skills__container {
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
 
 /*===== Work Section =====*/
 
