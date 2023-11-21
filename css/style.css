@@ -849,7 +849,8 @@ section {
 
 
 .services__modal-content {
-    width: 500px;
+    width: 800px;
+    height: 800px;
     position: relative;
     background-color: var(--box-color);
     padding: 4.5rem 2.5rem 2.5rem;
@@ -860,7 +861,7 @@ section {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--skin-color);
     cursor: pointer;
 }
@@ -904,7 +905,22 @@ section {
     opacity: 1;
     visibility: visible;
 }
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin: 4rem 0 0 0;
+}
+.modal-btn {
+    background-color: var(--skin-color);
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
 
+.modal-btn:hover {
+    background-color: #1b7be2;
+}
 /*===== Testimonial Section =====*/
 
 
