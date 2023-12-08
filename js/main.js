@@ -99,6 +99,8 @@ let closeModal = function (modalClick) {
 
 
 
+
+// végig megy a gombokon és futtat egy egy függvényt
 modalBtns.forEach((modalBtn, i) => {
     modalBtn.addEventListener('click', () => {
         modal(i);
