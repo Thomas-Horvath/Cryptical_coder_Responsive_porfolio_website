@@ -80,7 +80,7 @@ const modalViews = document.querySelectorAll(".services__modal"),
 /*  modal függvény létrehozása */
 let modal = function (modalClick) {
     // a mmodalClickben kapott  indexű elemhez jozzáadja az active-modal osztályt ami ccs-ben a megjelenésért felelős
-    modalViews[modalClick].classList.add("active-modal"); 
+    modalViews[modalClick].classList.add("active-modal");
 
     modalViews[modalClick].addEventListener("click", function (e) {
         // Ellenőrizzük, hogy a kattintás a modal tartalmán belül vagy kívül történt
@@ -137,19 +137,35 @@ let swiper = new Swiper(".testimonials__container", {
     breakpoints: {
         567: {
             slidesPerView: 2,
-         
+
         },
         768: {
             slidesPerView: 2,
             spaceBetween: 48,
         },
-      
+
     }
 });
 
 /*=============== INPUT ANIMATION ===============*/
+const inputs = document.querySelectorAll(".input");
 
+function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add('focus');
+}
 
+function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+        parent.classList.remove('focus');
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+})
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
