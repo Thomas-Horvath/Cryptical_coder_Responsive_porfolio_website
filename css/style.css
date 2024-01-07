@@ -246,6 +246,31 @@ section {
     font-size: 1.7rem;
 }
 
+.nav__toggle {
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
+
 /* Active Link */
 .nav__link.active-link,
 .nav__link:hover {
@@ -1240,11 +1265,79 @@ textarea.input {
 
 /*========== BREAKPOINTS ==========*/
 /* For Large Devices */
-@media screen and (max-width: 1408px) {}
+@media screen and (max-width: 1408px) {
+    .container {
+        margin-left: var(--mb-2-5);
+        margin-right: var(--mb-2-5);
+    }
+}
 
-@media screen and (max-width: 1216px) {}
+@media screen and (max-width: 1216px) {
+    .about__container {
+        column-gap: 2.5rem;
+    }
+    .about__description {
+        padding-right: 0;
+    }
+    .work__container {
+        grid-template-columns: repeat(2, 330px);
+    }
+}
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+    .sidebar {
+        width: 100%;
+        z-index: 999;
+        transform: translateX(-100%);
+    }
+    .show-sidebar {
+        transform: translateX(0);
+    }
+    .nav__logo, .btn__share {
+        display: none;
+    }
+    .nav__menu {
+        height: 100%;
+        width: 100%;
+        transform: rotate(0deg) translateX(0);
+        display: flex;
+        justify-content: center;
+
+    }
+    .nav__list {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__link {
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+    .nav__link.active-link::after, .nav__link:hover::after {
+        bottom: 0;
+    }
+    .nav__close {
+        display: block;
+    }
+    .nav__toggle {
+        display: flex;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    .about__img {
+        width: 350px;
+    }
+}
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {}
