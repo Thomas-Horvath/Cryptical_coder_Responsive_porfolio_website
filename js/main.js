@@ -1,14 +1,31 @@
 /*=============== SHOW SIDEBAR ===============*/
-
-
+const navMenu = document.getElementById('side-bar'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close'),
+    navLink = document.querySelectorAll('.nav__link');
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
-
+if (navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add('show-sidebar');
+    })
+}
 
 /*===== SIDEBAR HIDDEN =====*/
 /* Validate If Constant Exists */
+if (navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar');
+    })
+}
+navLink.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar');
+    });
 
+}
 
+);
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll("[data-target"),
     tabcontent = document.querySelectorAll('[data-content');
@@ -184,7 +201,7 @@ function navHighlighter() {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 30,
-        sectionId = current.getAttribute('id');
+            sectionId = current.getAttribute('id');
 
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
