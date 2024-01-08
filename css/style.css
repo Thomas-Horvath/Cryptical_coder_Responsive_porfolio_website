@@ -1276,11 +1276,14 @@ textarea.input {
     .about__container {
         column-gap: 2.5rem;
     }
+
     .about__description {
         padding-right: 0;
     }
+
     .work__container {
         grid-template-columns: repeat(2, 330px);
+        gap: 2.5rem;
     }
 }
 
@@ -1289,17 +1292,22 @@ textarea.input {
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
     }
+
     .sidebar {
         width: 100%;
         z-index: 999;
         transform: translateX(-100%);
     }
+
     .show-sidebar {
         transform: translateX(0);
     }
-    .nav__logo, .btn__share {
+
+    .nav__logo,
+    .btn__share {
         display: none;
     }
+
     .nav__menu {
         height: 100%;
         width: 100%;
@@ -1308,34 +1316,101 @@ textarea.input {
         justify-content: center;
 
     }
+
     .nav__list {
         flex-direction: column;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
+
     .nav__link {
         padding: 1rem 0;
         line-height: 1.5;
     }
-    .nav__link.active-link::after, .nav__link:hover::after {
+
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
         bottom: 0;
     }
+
     .nav__close {
         display: block;
     }
+
     .nav__toggle {
         display: flex;
     }
+
     .main {
         margin-left: 0;
     }
+
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
     }
+
     .about__img {
         width: 350px;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
+    .about__info {
+        justify-content: center;
+    }
+
+    .about__box {
+        padding: .75rem .5rem;
+    }
+
+    .about__description {
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .qualification__container {
+        grid-template-columns: repeat(2, 290px);
+    }
+
+    .skills__container {
+        grid-template-columns: 340px 300px;
+    }
+
+    .skills-list {
+        row-gap: 1.7rem;
+    }
+
+    .work__card {
+        padding: 1rem;
+    }
+
+    .work__img {
+        margin-bottom: var(--mb-0-75);
+    }
+
+    .work__title {
+        margin-bottom: var(--mb-0-25);
+    }
+
+    .services__container {
+        grid-template-columns: repeat(3, 220px);
+    }
+
+    .testimonial__card {
+        padding: 1.25rem 1.5rem;
+    }
+    .portfolio__item-details {
+        margin-bottom: var(--mb-1-5);
+    }
+    .details__info li {
+        margin-bottom: var(--mb-0-5);
+    }
+    .details__title {
+        margin-bottom: var(--mb-0-75);
     }
 }
 
