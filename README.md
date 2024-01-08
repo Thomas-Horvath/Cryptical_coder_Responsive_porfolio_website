@@ -7,4 +7,5 @@ If you want to make it and learn from it, you can find all the information at th
 
 
 
-## ![Preview](https://github.com/Thomas-Horvath/Cryptical_coder_Responsive_porfolio_website/blob/main/assets/img/preview.png)
+## Preview
+![Preview](https://github.com/Thomas-Horvath/Cryptical_coder_Responsive_porfolio_website/blob/main/assets/img/preview.png)
