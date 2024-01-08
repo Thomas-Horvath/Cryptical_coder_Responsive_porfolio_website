@@ -1415,7 +1415,66 @@ textarea.input {
 }
 
 /* For Medium Devices */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .about__img {
+        width: 250px;
+    }
+    .qualification__container {
+        grid-template-columns: 290px;
+        row-gap: 3rem;
+    }
+    .skills__container {
+        grid-template-columns: 300px;
+        row-gap: 3rem;
+    }
+    .work__container {
+        grid-template-columns: 330px;
+    }
+    .services__container {
+        grid-template-columns:  repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .services__content {
+        padding: 3.5rem .5rem 1.35rem 1.5rem;
+    }
+    .services__icon {
+        font-size: 1.5rem;
+    }
+    .contact__container {
+        grid-template-columns: 360px;
+        row-gap: 3rem;
+    }
+    .footer__container {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3rem;
+      
+    }
+    .footer__socials {
+        justify-self: start;
+    }
+    .footer__links {
+        flex-direction: column;
+        row-gap: 1.5rem;
+        
+    }
+    .footer__bg {
+        padding: 2rem 0 3rem;
+    }
+    .portfolio__popup-inner {
+        padding: 2.8rem 1.5rem 2.5rem;
+        width: 420px;
+    }
+    .portfolio__popup-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }
+    .detailes__title {
+        font-size: var(--normal-font-size);
+    }
+    .portfolio__popup-close {
+        top: .5rem;
+    }
+}
 
 @media screen and (max-width: 576px) {}
 
